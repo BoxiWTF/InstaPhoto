@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
+import logo from './logotipo.png';
 import './App.css';
 import firebase from 'firebase';
 import FileUpload from './FileUpload';
@@ -119,12 +119,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">InstaPhotos</h1>
-        </header>
-        <p className="App-intro">
-          {this.renderLoginButton()}
-        </p>
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        { this.renderLoginButton() }
       </div>
     );
   }
